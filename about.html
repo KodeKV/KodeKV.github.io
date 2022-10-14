@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <style>
+         * {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+
+        .progress {
+            background-color: rgb(62, 75, 173);
+            ;
+            height: 3px;
+            animation: load 1s ease-in-out 1;
+        }
+
+        .bg {
+            background: #bed1f6;
+            height: 100vh;
+        }
+
+        .first {
+            position: relative;
+            width: 100%;
+            /* height: 10vh; */
+            background: #bed1f6;
+            position: relative;
+
+        }
+
+        nav {
+            display: flex;
+            width: 84%;
+            height: 20px;
+            margin: auto;
+            padding: 25px 0;
+            align-items: center;
+            justify-content: space-between;
+            /* background-color: rgb(79, 126, 207); */
+            border-radius: 20px;
+            font-family: sans-serif;
+        }
+
+        nav ul li {
+            display: inline-block;
+            list-style: none;
+            margin: 10px 20px;
+
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #eff4fd;
+            font-weight: bold;
+
+        }
+
+        nav ul li b {
+            text-decoration: none;
+            color: rgb(62, 75, 173);
+            font-weight: bold;
+
+        }
+
+        nav ul li a:hover {
+            color: rgb(62, 75, 173);
+        }
+
+        nav ul li b:hover {
+            color: #eff4fd;
+        }
+
+        .Resume a {
+            background: #212121;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-weight: bold;
+            color: white;
+            display: inline-flex;
+            border-radius: 20px;
+            left: 20%;
+        }
+
+        .second {
+            margin-left: 55%;
+            margin-top: 7%;
+            background: #bed1f6;
+
+        }
+
+        .second h1 {
+            font-size: 50px;
+            color: #212121;
+            margin-bottom: 20px;
+
+        }
+
+        span {
+            color: rgb(67, 81, 180);
+        }
+
+        .second p {
+            color: #555;
+            line-height: 22px;
+        }
+
+        .second a {
+            background: #212121;
+            padding: 10px 18px;
+            text-decoration: none;
+            font-weight: bold;
+            color: #fff;
+            display: inline;
+            margin: 30px 0;
+            border-radius: 5px;
+
+        }
+
+        .images {
+            width: 45%;
+            height: 65%;
+            position: absolute;
+            top: 25%;
+            right: 800px;
+        }
+
+        .images img {
+            height: 100%;
+            position: absolute;
+            left: 50%;
+            bottom: 10;
+            transform: translateX(-50%);
+            transition: bottom 1s, left 1s;
+        }
+
+        .images .shape {
+            height: 120%;
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            transform: translateX(-50%);
+            transition: bottom 1s, left 1s;
+        }
+
+
+
+        .images:hover .shape {
+            bottom: 40px;
+            height: 120%;
+        }
+
+        .images:hover .Boy {
+            left: 45%;
+            height: 100%;
+        }
+
+        @keyframes load {
+            0% {
+                width: 0;
+            }
+
+            50% {
+                width: 60vw;
+            }
+
+            100% {
+                width: 100vw;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="progress"></div>
+
+    <div class="bg">
+        <div class="first">
+            <nav>
+
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="skills.html">SKILLS</a></li>
+                    <!-- <li><a href="project.html">PROJECT</a></li> -->
+                    <li><a href="https://www.toptal.com/developers/blog/web-front-end/">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><b href="about.html">ABOUT</a></li>
+                </ul>
+                <div class="Resume">
+                    <a href="contact.html">Download Resume</a>
+            </nav>
+        </div>
+
+        <div class="second">
+            <h1> <span>About me</span></h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt recusandae unde repudiandae hic assumenda aspernatur tenetur iste, aperiam impedit earum at deserunt neque, et qui repellat animi dolore perspiciatis quod. Distinctio, voluptatem sapiente veniam cupiditate eos placeat? Necessitatibus, accusamus! Deleniti nulla blanditiis quibusdam magni. Deleniti? <br>. </p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia, velit quisquam quam optio sequi ipsam minus voluptatum corporis, eaque aperiam rerum, inventore natus quibusdam eveniet officiis quas? Atque est doloribus repellendus quos nemo, natus commodi aperiam vitae nostrum nisi deserunt fuga in placeat iusto cumque, maiores tenetur nobis accusamus asperiores consequuntur mollitia eos ducimus? Placeat temporibus, tenetur eos earum vel magni? Pariatur id nemo sit?<br>.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias veritatis eligendi expedita fugiat id in cumque. Tempore, error obcaecati. Nesciunt.</p>
+
+        </div>
+
+        <div class="images">
+            <img src="images/shape.png" class="shape">
+            <img src="images/Boy.png" class="Boy">
+        </div>
+    
+</body>
+</html>

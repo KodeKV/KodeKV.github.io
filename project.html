@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="shortcut icon" href="favicon2.png" type="image/x-icon">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+
+        .progress {
+            background-color: rgb(62, 75, 173);
+            height: 3px;
+            animation:load 1s ease-in-out 1;
+        }
+
+
+        .first {
+            position: relative;
+            width: 100%;
+            height: 10vh;
+            background: #bed1f6;
+            position: relative;
+
+        }
+
+        nav {
+            display: flex;
+            width: 84%;
+            height: 20px;
+            margin: auto;
+            padding: 25px 0;
+            align-items: center;
+            justify-content: space-between;
+            border-radius: 20px;
+        }
+
+        nav ul li {
+            display: inline-block;
+            list-style: none;
+            margin: 10px 20px;
+
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #eff4fd;
+            font-weight: bold;
+
+        }
+
+        nav ul li b {
+            text-decoration: none;
+            color: rgb(62, 75, 173);
+            font-weight: bold;
+
+        }
+
+        nav ul li a:hover {
+            color: rgb(62, 75, 173);
+        }
+
+        nav ul li b:hover {
+            color: #eff4fd;
+        }
+
+        .Resume a {
+            background: #212121;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-weight: bold;
+            color: white;
+            display: inline-flex;
+            border-radius: 20px;
+            left: 20%;
+        }
+
+
+        .bg {
+            background-color: #bed1f6;
+            height: 100vh;
+        }
+
+        .project {
+            display: inline-flex;
+            list-style: none;
+            margin-left: 50%;
+            margin-top: 2%;
+            color: blue;
+
+        }
+
+        .fourth {
+            padding-top: 20px;
+            padding-bottom: 5px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            color: blue;
+            height: 50vh;
+            grid-gap: 10px;
+
+        }
+
+
+        .box4 {
+            height: 300px;
+            width: 300px;
+            border-radius: 20px;
+            background-color: rgb(207, 233, 245);
+            border: 2px solid rgb(67, 81, 180);
+            padding-left: 100px;
+        }
+
+        .box5 {
+            height: 300px;
+            width: 300px;
+            background-color: rgb(207, 233, 245);
+            border: 2px solid rgb(67, 81, 180);
+            border-radius: 20px;
+            padding-left: 100px;
+        }
+
+        .box6 {
+            height: 300px;
+            width: 300px;
+            background-color: rgb(207, 233, 245);
+            border: 2px solid rgb(67, 81, 180);
+            border-radius: 20px;
+            padding-left: 100px;
+        }
+
+        /* animation for progress */
+
+        @keyframes load {
+            0% {
+                width: 0;
+            }
+
+            50% {
+                width: 60vw;
+            }
+
+            100% {
+                width: 100vw;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="progress"></div>
+
+
+    <div class="first">
+        <nav>
+
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="skills.html">SKILLS</a></li>
+                <li><b href="project.html">PROJECT</a></li>
+                <li><a href="https://www.toptal.com/developers/blog/web-front-end/">BLOG</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+            </ul>
+            <div class="Resume">
+                <a href="contact.html">Download Resume</a>
+            </div>
+        </nav>
+    </div>
+
+    <div class="bg">
+        <div class="project">
+            <h1>Projects</h1>
+
+        </div>
+        <div class="fourth">
+            <div class="box4">
+                <h2>x project</h2>
+                <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur, at.</p>
+            </div>
+            <div class="box5">
+                <h2>y project</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi, quidem!</p>
+
+
+            </div>
+            <div class="box6">
+                <h2>z project</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti, fugit.</p>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
