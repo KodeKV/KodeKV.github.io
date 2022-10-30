@@ -1,234 +1,199 @@
 <!DOCTYPE html>
-<html lang="en">
+<!-- Designined by CodingLab | www.youtube.com/codinglabyt -->
+<html lang="en" dir="ltr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Krunal Website</title>
-    <link rel="shortcut icon" href="favicon2.png" type="image/x-icon">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            font-family: sans-serif;
-        }
-
-        .progress {
-            background-color: rgb(62, 75, 173);
-            ;
-            height: 3px;
-            animation: load 1s ease-in-out 1;
-        }
-
-        .bg {
-            background: #bed1f6;
-            height: 100vh;
-        }
-
-        .first {
-            position: relative;
-            width: 100%;
-            /* height: 10vh; */
-            background: #bed1f6;
-            position: relative;
-
-        }
-
-        nav {
-            display: flex;
-            width: 84%;
-            height: 20px;
-            margin: auto;
-            padding: 25px 0;
-            align-items: center;
-            justify-content: space-between;
-            /* background-color: rgb(79, 126, 207); */
-            border-radius: 20px;
-            font-family: sans-serif;
-        }
-
-        nav ul li {
-            display: inline-block;
-            list-style: none;
-            margin: 10px 20px;
-
-        }
-
-        nav ul li a {
-            text-decoration: none;
-            color: #eff4fd;
-            font-weight: bold;
-
-        }
-
-        nav ul li b {
-            text-decoration: none;
-            color: rgb(62, 75, 173);
-            font-weight: bold;
-
-        }
-
-        nav ul li a:hover {
-            color: rgb(62, 75, 173);
-        }
-
-        nav ul li b:hover {
-            color: #eff4fd;
-        }
-
-        .Resume a {
-            background: #212121;
-            padding: 10px 20px;
-            text-decoration: none;
-            font-weight: bold;
-            color: white;
-            display: inline-flex;
-            border-radius: 20px;
-            left: 20%;
-        }
-
-        .second {
-            margin-left: 55%;
-            margin-top: 15%;
-            background: #bed1f6;
-
-        }
-
-        .second h1 {
-            font-size: 50px;
-            color: #212121;
-            margin-bottom: 20px;
-
-        }
-
-        span {
-            color: rgb(67, 81, 180);
-        }
-
-        .second p {
-            color: #555;
-            line-height: 22px;
-        }
-
-        .second a {
-            background: #212121;
-            padding: 10px 18px;
-            text-decoration: none;
-            font-weight: bold;
-            color: #fff;
-            display: inline;
-            margin: 30px 0;
-            border-radius: 5px;
-
-        }
-
-        .images {
-            width: 45%;
-            height: 65%;
-            position: absolute;
-            top: 25%;
-            right: 800px;
-        }
-
-        .images img {
-            height: 100%;
-            position: absolute;
-            left: 50%;
-            bottom: 10;
-            transform: translateX(-50%);
-            transition: bottom 1s, left 1s;
-        }
-
-        .images .shape {
-            height: 120%;
-            position: absolute;
-            left: 50%;
-            bottom: 0;
-            transform: translateX(-50%);
-            transition: bottom 1s, left 1s;
-        }
-
-
-
-        .images:hover .shape {
-            bottom: 40px;
-            height: 120%;
-        }
-
-        .images:hover .Boy {
-            left: 45%;
-            height: 100%;
-        }
-
-        /* animation for progress */
-
-        @keyframes load {
-            0% {
-                width: 0;
-            }
-
-            50% {
-                width: 60vw;
-            }
-
-            100% {
-                width: 100vw;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title> Krunal website </title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Fontawesome CDN Link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon2.png" type="image/x-icon">
 </head>
 
 <body>
-
-    <div class="progress"></div>
-
-    <div class="bg">
-
-
-        <div class="first">
-            <nav>
-
-                <ul>
-                    <li><b href="index.html">HOME</a></li>
-                    <li><a href="skills.html">SKILLS</a></li>
-                    <!-- <li><a href="project.html">PROJECT</a></li> -->
-                    <li><a href="https://www.toptal.com/developers/blog/web-front-end/">BLOG</a></li>
-                    <li><a href="contact.html">CONTACT</a></li>
-                    <li><a href="about.html">ABOUT</a></li>
-                </ul>
-
-                <div class="Resume">
-                    <a href="contact.html">Download Resume</a>
-                </div>
-            </nav>
+  <!-- Move to up button -->
+  <div class="scroll-button">
+    <a href="#home"><i class="fas fa-arrow-up"></i></a>
+  </div>
+  <!-- navgaition menu -->
+  <nav>
+    <div class="navbar">
+      <div class="logo"><a href="#">KV</a></div>
+      <ul class="menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#services">Blog</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <div class="cancel-btn">
+          <i class="fas fa-times"></i>
         </div>
+      </ul>
+      <!-- <div class="media-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div> -->
+      <!-- <div class="button">
+        <button>Download Resume</button>
+    </div> -->
 
+      <div class="Resume">
+        <a href="contact.html">Download Resume</a>
+      </div>
+      <div class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+  </nav>
 
-        <div class="second">
-            HELLO, MY NAME IS <h1> <span>KRUNAL</span></h1>
-            <p>This is my official website to showcase my
-                all works related to <br> web development . </p>
+  <!-- Home Section Start -->
+  <section class="home" id="home">
+    <div class="home-content">
+      <div class="text">
+        <div class="text-one">Hello,</div>
+        <div class="text-two">MY NAME IS KRUNAL</div>
+        <div class="text-three">This is my official website to showcase <br> my
+          all works related to <br> web development .</div>
 
-        </div>
-
-
-        <div class="images">
-            <img src="images/shape.png" class="shape">
-            <img src="images/Boy.png" class="Boy">
-        </div>
-
-        <!-- <div class="third">
-    
-        </div> -->
-
+      </div>
+      <div class="button">
+        <button>Hire Me</button>
+      </div>
     </div>
+  </section>
+
+  <!-- About Section Start -->
+  <section class="about" id="about">
+    <div class="content">
+      <div class="title"><span>About Me</span></div>
+      <div class="about-details">
+        <div class="left">
+          <img src="images/about.jpg" alt="">
+        </div>
+        <div class="right">
+          <div class="topic">frontend Developer</div>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea voluptates totam est rerum veniam nemo, aut
+            accusamus quam, nam tenetur ut eius velit quos cumque modi error quaerat porro delectus vel cupiditate!
+            Architecto quibusdam error dicta? Tenetur soluta nostrum quae odit optio, nam dignissimos. Commodi eius,
+            magnam veniam reprehenderit amet minus vel autem aliquam quasi architecto, aspernatur tempore? A, assumenda
+            consequatur. Molestias autem itaque ducimus tempore perspiciatis accusamus fuga delectus aliquam rem cumque
+            sit reprehenderit optio maxime sunt praesentium aspernatur, consequatur laboriosam dolor nulla ullam. Unde,
+            ratione rerum.</p>
+          <!-- <div class="button">
+        <button>Download Resume</button> -->
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- My Skill Section Start -->
+  <!-- Section Tag and Other Div will same where we need to put same CSS -->
+  <section class="skills" id="skills">
+    <div class="content">
+      <div class="title"><span>My Skills</span></div>
+      <div class="skills-details">
+        <div class="text">
+          <div class="topic">Developing soft skills for hard cases.</div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ipsam voluptatum laudantium dolor
+            cum suscipit cupiditate debitis autem sed eligendi quia amet, sapiente, impedit illum illo incidunt
+            accusamus temporibus est! Cum, quibusdam neque.</p>
+          <!-- <div class="experience">
+            <div class="num"></div>
+            <div class="exp"><br> </div>
+          </div> -->
+        </div>
+        <div class="boxes">
+          <div class="box">
+            <div class="topic">HTML</div>
+            <img src="images/html.png" class="icons">
+          </div>
+          <div class="box">
+            <div class="topic">CSS</div>
+            <img src="images/css3.png" class="icons">
+          </div>
+          <div class="box">
+            <div class="topic">JavScript</div>
+            <img src="images/Javascript.png" class="icons">
+          </div>
+          <div class="box">
+            <div class="topic">Other</div>
+            <img src="images/Clanguage.png" class="icons">
+            <img src="images/nodejs.png" class="icons">
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- My Services Section Start -->
+  <section class="services" id="services">
+    <div class="content">
+      <div class="title"><span>My Services</span></div>
+      <div class="boxes">
+        <div class="box">
+          <div class="icon">
+            <i class="fas fa-desktop"></i>
+          </div>
+          <div class="topic">Web Devlopment</div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, a similique dolorum fugiat dolorem maxime
+            saepe vitae veritatis adipisci reprehenderit.</p>
+        </div>
+
+        <div class="box">
+          <div class="icon">
+            <i class="fas fa-paint-brush"></i>
+          </div>
+          <div class="topic">Graphic Design</div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel error quisquam iste voluptas illum consectetur
+            aliquam? Odit maxime voluptatum qui.</p>
+        </div>
+
+        <div class="box">
+          <div class="icon">
+            <i class="fab fa-android"></i>
+          </div>
+          <div class="topic">Icon Design</div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam molestiae esse enim dolorem distinctio mollitia aliquam deleniti debitis quam totam.</p>
+        </div>
 
 
-</body>
+        <div class="box">
+          <div class="icon">
+            <i class="fas fa-tablet-alt"></i>
+          </div>
+          <div class="topic">Apps Devlopment</div>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt itaque tempore incidunt iure facilis temporibus quas inventore impedit dolores odio.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-</html>
+  <!-- Contact Me section Start -->
+  <section class="contact" id="contact">
+    <div class="content">
+      <div class="title"><span>Contact Me</span></div>
+      <div class="text">
+        <div class="topic">Have Any Project?</div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit atque eaque dolorem ullam, sit beatae accusantium soluta nihil iste perferendis quo, officia nisi sequi in.</p>
+        <div class="button">
+          <button>Let's Talk</button>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- Footer Section Start -->
+  <footer>
+    <div class="text">
+      <span>Created By <a href="#">krunalvasava</a> | &#169; 2022 All Rights Reserved</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 
 </html>
